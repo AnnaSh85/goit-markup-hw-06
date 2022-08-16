@@ -530,8 +530,11 @@ body {
   display: flex;
   align-items: baseline;
 }
+.footer-container-nav {
+  flex-grow: 1;
+}
 .subscrible {
-  padding-left: 94px;
+  margin-left: 94px;
 }
 
 .subscrible-box {
@@ -545,7 +548,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 12px;
+
   margin-bottom: 20px;
 }
 
@@ -567,7 +570,7 @@ body {
 
 .btn-footer-send {
   margin-left: 12px;
-  margin-right: 10px;
+
   min-width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -705,8 +708,8 @@ body {
 .modal {
   background-color: var(--second-btn-color);
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(133, 132, 132, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   min-width: 528px;
   min-height: 581px;
   position: absolute;
@@ -719,13 +722,11 @@ body {
 
 .modal-close {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8px;
+  top: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  margin-top: 8px;
-  margin-right: 8px;
   width: 30px;
   height: 30px;
   display: flex;
@@ -816,7 +817,7 @@ body {
   border-color: violet;
 } */
 
-.modal-field {
+.modal-field div:last-child {
   margin-bottom: 10px;
 }
 .modal-field-chek {
@@ -834,6 +835,7 @@ body {
 }
 
 .modal-text {
+  display: block;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -846,6 +848,7 @@ body {
 
 .check-text {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-weight: 400;
   font-size: 14px;
